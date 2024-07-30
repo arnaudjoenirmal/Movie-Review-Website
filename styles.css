@@ -1,0 +1,143 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+.main-container{
+    display:grid;
+    grid-template-rows: 100px 400px 1fr;
+    width:100%;
+    gap:10px;
+}
+
+.topbar{
+    display:flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    height: 100px;
+}
+
+input{
+    height:30px;
+    width:300px;
+}
+.logo img{
+    height:100px;
+    width:100px;
+}
+
+.click{
+    padding: 40px 40px ;
+    color:white;
+}
+
+.bottombar{
+    width: 95%;
+    margin:auto;
+    margin-top:20px;
+}
+.subheading{
+    width:300px;
+    border-left: 3px solid red;
+    padding-left: 4px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    transition:0.8s;
+}
+
+.subheading:hover {
+    font-size:25px;
+}
+
+.movie_title {
+    border-left:3px solid red;
+    padding-left:2px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+}
+
+.movie{
+    display:flex;
+    margin-bottom: 50px;
+}
+.movie_title a{
+    text-decoration: none;
+    color: black;
+}
+
+.movie_title a{
+    transition:0.8s;
+}
+
+.movie_title:hover {
+    width:100%;
+    font-size:18px;
+    opacity: 0.7;
+    transition-timing-function: ease-in-out;
+    background-color: red;
+}
+.preview{
+    height:330px;
+    width:188px;
+    /*
+    background-color: lightblue;
+    */
+    margin:0px 10px;
+    transition:1s;
+}
+
+.preview img{
+    height:268px;
+    width:188px;
+}
+
+.preview img:hover{
+    opacity:0.4;
+}
+
+.main {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+}
+
+.left , .right {
+    background-color: aquamarine;
+    height:450px;
+    margin-top: 15px;
+}
+
+.details {
+    height:225px;
+    background-color: rgb(57, 255, 255);
+}
+
+.rating {
+    height:225px;
+    background-color: rgb(0, 122, 122);
+}
+
+.slide{
+    width:70%;
+    /*
+    background-color: aquamarine;
+    */
+    height:400px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    margin-left:180px;
+}
+.slide img.active {
+    opacity: 1;
+}
+.slide img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
